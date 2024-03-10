@@ -9,9 +9,11 @@ public class PlayerController : MonoBehaviour
         
     }
 
+    public float speed = 20;
+
     void Update()
     {
         // move forward
-        transform.Translate(Vector3.forward * Time.deltaTime * 20 );
+        transform.Translate(Vector3.forward * Time.deltaTime * speed );
     }
 }
